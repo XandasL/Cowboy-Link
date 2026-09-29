@@ -1,0 +1,36 @@
+name: Cleanup old build runs
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel older Build runs
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const currentHead = context.sha;
+            const runs = await github.paginate(github.rest.actions.listWorkflowRunsForRepo, {
+              owner,
+              repo,
+              per_page: 100,
+            });
+            for (const run of runs) {
+              if (run.name !== "Build") continue;
+              if (run.head_sha === currentHead) continue;
+              if (!["queued", "in_progress", "waiting", "requested", "pending"].includes(run.status)) continue;
+              try {
+                await github.rest.actions.cancelWorkflowRun({ owner, repo, run_id: run.id });
+                core.info(`Cancelled old Build run #${run.run_number} (${run.id})`);
+              } catch (error) {
+                core.warning(`Could not cancel run ${run.id}: ${error.message}`);
+              }
+            }
