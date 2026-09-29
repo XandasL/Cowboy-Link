@@ -1,0 +1,4 @@
+Cowboy Link original code/scripts: MIT License, Copyright (c) 2026 XandasLegend.
+Hat_Cooper: CC BY 4.0, creator THESTIG03.
+Nintendo-owned game assets are not covered by the Cowboy Link MIT License.
+See CREDITS.txt for full attribution.
