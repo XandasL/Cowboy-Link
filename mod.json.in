@@ -1,0 +1,9 @@
+{
+  "id": "alexandre.cooper_hat.texture_selector",
+  "name": "Cowboy Link",
+  "version": "@PROJECT_VERSION@",
+  "author": "XandasLegend",
+  "description": "Replaces Link's classic cap with a western-style cowboy hat. Supports Hero and Ordon outfits, selectable texture presets, leather styles, brightness and custom color controls. The modified head is reconstructed at runtime from the player's local game assets instead of bundling complete Link model files.",
+  "icon": "res/icon.png",
+  "banner": "res/banner.png"
+}
