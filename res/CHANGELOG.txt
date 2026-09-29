@@ -1,0 +1,10 @@
+Cowboy Link - Changelog
+
+v1.1.0
+- Model delivery: Cowboy Link now reconstructs the modified head at runtime using
+  the player's local game assets instead of bundling complete Link model files.
+- Preserved Hero's Tunic and Ordon Outfit support.
+- Preserved 512, 1K, 2K, 4K and Vanilla texture presets.
+- Preserved original/dark leather styles, brightness, and custom color controls.
+- Added cross-platform build support through the official TwilitRealm mod template.
+- Retained Hat_Cooper / THESTIG03 attribution under CC BY 4.0.
