@@ -28,5 +28,5 @@ add_mod(cowboy_link
 
 # MSVC-specific quality-of-life flags only; other platforms keep their native compiler flags.
 if (MSVC)
-    target_compile_options(cowboy_link PRIVATE /EHsc /utf-8)
+    target_compile_options(cowboy_link PRIVATE /EHsc /utf-8 /Zc:__cplusplus)
 endif ()
