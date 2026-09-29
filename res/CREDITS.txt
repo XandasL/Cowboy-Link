@@ -1,0 +1,19 @@
+Cowboy Link
+Mod by XandasLegend
+
+THIRD-PARTY MODEL
+Original model: Hat_Cooper
+Creator: THESTIG03
+Sketchfab profile: https://sketchfab.com/THESTIG03
+Original model page: https://sketchfab.com/3d-models/hat-cooper-fa24ec3654a14883816c1132a0da6e18
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+License page: https://creativecommons.org/licenses/by/4.0/
+
+The original model has been modified for Cowboy Link, including changes to scale,
+positioning, rigging/integration, materials, textures, and presentation.
+
+LICENSE NOTES
+Original Cowboy Link code/scripts by XandasLegend are released under the MIT License.
+Hat_Cooper remains licensed separately under CC BY 4.0.
+Nintendo-owned game assets are not covered by the MIT License and remain the property
+of their respective rights holders.
