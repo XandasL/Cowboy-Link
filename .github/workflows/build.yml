@@ -45,6 +45,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - name: Restore large bundled assets
+        run: python3 tools/restore_payload.py
+
       - name: Read pinned Dusklight version
         id: dusklight
         shell: bash
